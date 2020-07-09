@@ -50,8 +50,6 @@ class ClapTyper extends React.Component {
         </select>
         <br />
         <textarea rows="10" value={this._clap(this.state.text)}></textarea>
-        <a href={"https://twitter.com/intent/tweet?text=" + this._clap(this.state.text)}>Tweet</a>
-        <a href="http://sick.af" className="black pull-right">made by sick.af</a>
       </div>
     )
   }
