@@ -24,10 +24,28 @@ class ClapTyper extends React.Component {
 
   _onSelectChange(emoji) {
     this.setState({ emoji });
+    this.updateFaviconAndTitle(emoji);
   }
 
   _clap(text) {
     return text.split(/\s+/).join(` ${this.state.emoji} `);
+  }
+
+  faviconTemplate(icon) {
+    return `
+    <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+      <text y=%22.9em%22 font-size=%2290%22>
+        ${icon}
+      </text>
+    </svg>
+  `.trim();
+  }
+
+  updateFaviconAndTitle(emoji) {
+    const linkForFavicon = document.querySelector(`head > link[rel='icon']`);
+    const newFavicon = this.faviconTemplate(emoji);
+    linkForFavicon.setAttribute(`href`, `data:image/svg+xml,${newFavicon}`);
+    document.title = `Clap ${emoji} Typer`;
   }
 
   render() {
