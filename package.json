@@ -2,7 +2,7 @@
   "name": "clapper-typer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://johnmberger.com/clap-typer",
+  "homepage": "https://johnmberger.com/clap-typer/",
   "devDependencies": {
     "react-scripts": "0.6.1"
   },
