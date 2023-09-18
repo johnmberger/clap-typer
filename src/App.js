@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 class ClapTyper extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: '',
-      emoji: '👏',
+      text: "",
+      emoji: "👏",
     };
   }
 
@@ -54,7 +54,7 @@ class ClapTyper extends React.Component {
         <h1>Clap {this.state.emoji} Typer</h1>
         <input
           type="text"
-          placeholder="type woke shit here"
+          placeholder="type shit here"
           onChange={(e) => this._onChange(e.target.value)}
         />
         <br />
