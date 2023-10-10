@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/clap-typer/static/css/main.0936383b.css",
+    "main.js": "/clap-typer/static/js/main.47759901.js",
+    "index.html": "/clap-typer/index.html",
+    "main.0936383b.css.map": "/clap-typer/static/css/main.0936383b.css.map",
+    "main.47759901.js.map": "/clap-typer/static/js/main.47759901.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0936383b.css",
+    "static/js/main.47759901.js"
+  ]
+}
